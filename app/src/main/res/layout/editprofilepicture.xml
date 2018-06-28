@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button10"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:text="Foto aufnehmen"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="88dp"
+        android:text="Aktuelles Foto entfernen"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button8"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Aus Galerie auswählen"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/abbrechen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Abbrechen" />
+
+</RelativeLayout>
