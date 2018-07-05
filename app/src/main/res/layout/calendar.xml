@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
-    
-    <RelativeLayout
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        >
 
         <CalendarView
             android:id="@+id/calendarView"
@@ -24,20 +19,17 @@
             android:layout_height="56dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
-            app:menu="@menu/bottom_navigation">
+            app:menu="@menu/bottom_navigation"/>
 
-        </android.support.design.widget.BottomNavigationView>
-    </RelativeLayout>
-
-    <FrameLayout
         android:id="@+id/main_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
 
-</FrameLayout>
 
 
 
-</LinearLayout>
+</RelativeLayout>

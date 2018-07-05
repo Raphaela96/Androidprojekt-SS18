@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 /**
  * Created by rapha on 09.05.2018.
@@ -21,10 +22,6 @@ import android.widget.FrameLayout;
 public class Profile extends MainActivity {
     Button profilBearbeiten;
     private BottomNavigationView mMainNav;
-    private FrameLayout mMainFrame;
-    private ProfileFragment profileFragment;
-    private DateFragment dateFragment;
-    private AddFragment addFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,48 +29,41 @@ public class Profile extends MainActivity {
         hideSoftKeyboard();
         setContentView(R.layout.profile);
         startEditProfileActivity();
-        mMainFrame = (FrameLayout) findViewById(R.id.main_frame);
         mMainNav = (BottomNavigationView) findViewById(R.id.bottom_navigation);
 
-        profileFragment = new ProfileFragment();
-        dateFragment = new DateFragment();
-        addFragment = new AddFragment();
+
 
         mMainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
 
+
                     case R.id.nav_profile:
-                    mMainNav.setItemBackgroundResource(R.color.colorPrimary);
-                    setFragment(profileFragment);
-                       return true;
+                        Toast.makeText(Profile.this, "nav_profile",
+                                Toast.LENGTH_LONG).show();
+                       break;
 
                     case R.id.nav_date:
-                    setFragment(dateFragment);
-                        return true;
+                        Toast.makeText(Profile.this, "nav_date",
+                                Toast.LENGTH_LONG).show();
+                        setContentView(R.layout.calendar);
+                        break;
 
                     case R.id.nav_add:
-                     mMainNav.setItemBackgroundResource(R.color.WhiteTransparent);
-                    setFragment(addFragment);
-                      return true;
+                        Toast.makeText(Profile.this, "nav_add",
+                                Toast.LENGTH_LONG).show();
 
-                    default:
-                        return false;
+                      break;
+
+
 
                 }
+                return false;
             }
         });
 
     }
-
-    private void setFragment(Fragment fragment) {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.main_frame, fragment);
-        fragmentTransaction.commit();
-        }
-
 
     public void hideSoftKeyboard(){
         if(getCurrentFocus() != null){

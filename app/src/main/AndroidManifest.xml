@@ -16,8 +16,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Profile"></activity>
+        <activity android:name=".Calendar"></activity>
         <activity android:name=".EditProfile"></activity>
         <activity android:name=".EditProfilePicture"></activity>
+
     </application>
 
 </manifest>
