@@ -6,4 +6,6 @@
 
     <color name="White">#ffffff</color>
     <color name="WhiteTransparent">#80ffffff</color>
+
+    <color name="AntiqueWhite">#ffefdb</color>
 </resources>

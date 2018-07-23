@@ -3,48 +3,50 @@
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="@color/AntiqueWhite">
+    >
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/fotoaufnehmenButton"
         android:layout_width="386dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/button10"
+        android:layout_below="@+id/fotolöschen"
         android:layout_gravity="center"
         android:layout_marginTop="18dp"
-        android:text="Foto aufnehmen"
+        android:text="@string/fotoaufnehmenButton"
         android:textAlignment="center" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/fotolöschen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_gravity="center"
         android:layout_marginTop="88dp"
-        android:text="Aktuelles Foto entfernen"
+        android:text="@string/fotolöschen"
         android:textAlignment="center" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/bildAusGalerieAuswählen"
         android:layout_width="386dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/button8"
+        android:layout_below="@+id/fotoaufnehmenButton"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:text="Aus Galerie auswählen"
+        android:text="@string/bildAusGalerieAuswählen"
         android:textAlignment="center" />
 
     <Button
         android:id="@+id/abbrechen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button9"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:text="Abbrechen" />
+        android:text="@string/abbrechen"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/bildAusGalerieAuswählen"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

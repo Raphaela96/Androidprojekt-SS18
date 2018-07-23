@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">ReisetagebuchApp</string>
-    <string name="losgehts">Los gehts</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="losgehts">Hier geht es zum Login</string>
+    <string name="profilBearbeiten">Profil bearbeiten</string>
+    <string name="benutzername">Benutzername</string>
+    <string name="status">Status</string>
+    <string name="alleReisenlöschen">All Reisen löschen</string>
+    <string name="fotoaufnehmenButton">Foto aufnehmen</string>
+    <string name="fotolöschen">Aktuelle Foto entfernen</string>
+    <string name="abbrechen">abbrechen</string>
+    <string name="bildAusGalerieAuswählen">Bild aus Galerie auswählen</string>
+    <string name="fertig">Fertig</string>
 </resources>

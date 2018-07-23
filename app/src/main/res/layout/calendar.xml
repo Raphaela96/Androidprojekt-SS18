@@ -3,16 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/AntiqueWhite">
 
         <CalendarView
             android:id="@+id/calendarView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="47dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="31dp"></CalendarView>
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"></CalendarView>
 
         <android.support.design.widget.BottomNavigationView
             android:layout_width="match_parent"
@@ -20,16 +19,5 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
             app:menu="@menu/bottom_navigation"/>
-
-        android:id="@+id/main_frame"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/bottom_navigation"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
-
-
-
-
 
 </RelativeLayout>
