@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="1"
-    android:background="@color/AntiqueWhite">
     >
 
     <Button
@@ -57,5 +56,38 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Benutzername" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_toStartOf="@+id/fertig"
+        android:layout_marginEnd="17dp" />
+
+    <Button
+        android:id="@+id/benutzernameÄndern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editText3"
+        android:text="speichern" />
+
+    <Button
+        android:id="@+id/statusÄndern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/benutzernameÄndern"
+        android:layout_below="@+id/benutzernameÄndern"
+        android:text="speichern" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statusÄndern"
+        android:layout_marginTop="66dp"
+        android:layout_toStartOf="@+id/fertig"
+        android:text="TextView" />
 
 </RelativeLayout>

@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -26,6 +27,14 @@ public class Profile extends MainActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent intent = getIntent();
+       // String text = intent.getStringExtra(EditProfile.EXTRA_TEXT);
+        TextView benutzername = (TextView) findViewById(R.id.benutzername);
+        //Intent i = getIntent();
+        //Bundle bd = i.getExtras();
+        //String getName = (String) bd.get("name");
+       // benutzername.setText(getName);
+      //  benutzername.setText(text);
         hideSoftKeyboard();
         setContentView(R.layout.profile);
         startEditProfileActivity();
